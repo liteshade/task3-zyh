@@ -1,0 +1,43 @@
+```graphviz
+digraph G {
+    "we" -> "people" [label="7"];
+    "we" -> "time" [label="1"];
+    "we" -> "see" [label="1"];
+    "people" -> "see" [label="6"];
+    "people" -> "watch" [label="6"];
+    "people" -> "people" [label="5"];
+    "people" -> "pass" [label="5"];
+    "people" -> "go" [label="9"];
+    "people" -> "time" [label="3"];
+    "see" -> "time" [label="6"];
+    "see" -> "pass" [label="5"];
+    "see" -> "we" [label="2"];
+    "see" -> "go" [label="5"];
+    "see" -> "people" [label="3"];
+    "time" -> "pass" [label="7"];
+    "time" -> "go" [label="7"];
+    "time" -> "watch" [label="6"];
+    "time" -> "people" [label="3"];
+    "time" -> "see" [label="2"];
+    "pass" -> "by" [label="2"];
+    "pass" -> "time" [label="7"];
+    "pass" -> "go" [label="5"];
+    "pass" -> "people" [label="3"];
+    "pass" -> "we" [label="2"];
+    "pass" -> "watch" [label="1"];
+    "go" -> "slow" [label="2"];
+    "go" -> "fast" [label="2"];
+    "go" -> "time" [label="7"];
+    "go" -> "people" [label="3"];
+    "go" -> "we" [label="1"];
+    "go" -> "see" [label="1"];
+    "go" -> "watch" [label="3"];
+    "slow" -> "pass" [label="2"];
+    "slow" -> "watch" [label="1"];
+    "fast" -> "go" [label="2"];
+    "watch" -> "time" [label="6"];
+    "watch" -> "slow" [label="1"];
+    "watch" -> "we" [label="1"];
+    "watch" -> "pass" [label="2"];
+    "watch" -> "see" [label="1"];
+}
